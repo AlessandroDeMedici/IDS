@@ -305,7 +305,7 @@ def split_and_save(flows, save_path, prefix):
 
 def main():
     parser = argparse.ArgumentParser(description="Preprocessing avanzato per 5G-NIDD")
-    parser.add_argument("--flow_length", type=int, default=10, help="Numero massimo di pacchetti per flusso")
+    parser.add_argument("--flow_length", type=int, default=50, help="Numero massimo di pacchetti per flusso")
     parser.add_argument("--time_window", type=int, default=10, help="Finestra temporale (in secondi) per raggruppare i pacchetti")
     args = parser.parse_args()
     
